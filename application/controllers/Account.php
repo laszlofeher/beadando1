@@ -36,7 +36,6 @@ class Account extends CI_Controller{
             $output['username']     = $this->session->get_userdata('user')['user']['utonev'];
             $output['userdetails']  = $this->auser->getUserById($this->session->get_userdata('user')['user']['id']);
             $this->load->view('home', $output);
-            
         }
         else
         {
