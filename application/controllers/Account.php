@@ -6,6 +6,8 @@
  * @author feherlaszlo
  */
 class Account extends CI_Controller{
+    //változás
+    //másik változtatás
     
     public function __construct() {
         parent::__construct();
