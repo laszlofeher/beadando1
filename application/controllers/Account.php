@@ -37,7 +37,9 @@ class Account extends CI_Controller{
             $output['userdetails']  = $this->auser->getUserById($this->session->get_userdata('user')['user']['id']);
             $this->load->view('home', $output);
             
-        }else{
+        }
+        else
+        {
             $vezeteknev     = $this->input->post('vezeteknev');
             $utonev         = $this->input->post('utonev');
             $rjelszo        = $this->input->post('rjelszo');
@@ -72,9 +74,5 @@ class Account extends CI_Controller{
             }
             
         }
-        
-        
-        
-        
     }
 }
